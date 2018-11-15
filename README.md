@@ -1,5 +1,8 @@
-# recalls-safety
+# RSA-renewal
 ## Repo for Recalls and Safety optimization protoyping project 
+
+2018-11-15 - New repo based on [gc-proto/recalls-safety](https://github.com/gc-proto/recalls-safety)
+
 A collaboration between TBS Digital Transformation Office, Health Canada, CFIA, Transport, Environment Canada
 
 This repo holds a prototyped version of a new Mobile-1st design for Recalls and search/filter tools to improve citizen success. The search engine design and algorithms are hosted on Canada.ca search.  An initial baseline round of task-scenario testing on the live version of RSAMS (Recalls Safety Alerts Message System) highlighted critical usability problems that we improved in these prototypes of a potential new design. A second round of validation testing with a different set of Canadian participants on their smartphones took place in June 2018. Significant improvements in task success support this new approach.  
