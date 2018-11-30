@@ -248,7 +248,7 @@ $(function() {
   $('.owl-carousel').owlCarousel({
     margin: 20,
     loop: true,
-    items: 1,
+    items: 2,
     stagePadding: 50
   });
 });
