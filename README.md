@@ -12,7 +12,12 @@ An initial baseline round of task-scenario testing on the live version of RSAMS 
 
 The design in Mobile 1st because the vast majority of people visiting recalls, particularly food recalls (89% mobile in June 2018) are viewing the web pages on their mobile phone. The search and filtering design is specificially designed to support using filters and search from a phone, while still keeping search results close by on the page. 
 
-## Templates 
+## Templates (December 2018)
+
+Various recall and safety alert examples (new design by product)
+* https://hc-sc.github.io/rsa-renewal/examples/hc-template_links
+
+## Usability prototypes (June 2018) 
 
 New search site: 
 * http://search-recherche.gc.ca/rGsPreview/s_r?st=s&s5bm3ts21rch=x&num=10&st1rt=0&langs=eng&cdn=rasf&&
