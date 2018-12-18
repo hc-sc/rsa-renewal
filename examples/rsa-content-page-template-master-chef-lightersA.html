@@ -208,7 +208,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 </script>
 <div class="recall-super-title" style="overflow: hidden;">
-	<div class="recall-category" style="padding: 10px 0px 0px 5px; float:left; margin-top: 5px;"> <a href="http://search-recherche.gc.ca/rGsPreview/s_r?st=s&s5bm3ts21rch=x&num=10&st1rt=0&langs=eng&cdn=rasf&q=*:*&fq_pcat=Health&dspl=scat&fq_cat=Drugs" class="cust-breadcrumb">ᐸ Drugs</a> </div>
+	<div class="recall-category" style="padding: 10px 0px 0px 5px; float:left; margin-top: 5px;"> <a href="https://www.canada.ca/en.html" class="cust-breadcrumb">ᐸ Home</a> </div>
 </div>
 
 <!-- ========= Content Start ========== -->
@@ -256,19 +256,19 @@ var getUrlParameter = function getUrlParameter(sParam) {
 	The  following model is affected by this recall:
 	</caption>
 	<thead>
-		<tr class="bg-primary">
-			<th>Product number</th>
-			<th>Lot number</th>
-			<th>Manufacturing date</th>
-			<th>UPC</th>
+		<tr>
+			<th scope="col">Product number</th>
+			<th scope="col">Lot number</th>
+			<th scope="col">Manufacturing date</th>
+			<th scope="col">UPC</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>076-2044</td>
-			<td>AD6523/G35J</td>
-			<td>2016-02-01</td>
-			<td>645990215739</td>
+			<td data-label="Product number">076-2044</td>
+			<td data-label="Lot number">AD6523/G35J</td>
+			<td data-label="Manufacturing date">2016-02-01</td>
+			<td data-label="UPC">645990215739</td>
 		</tr>
 	</tbody>
 </table>
@@ -279,6 +279,8 @@ var getUrlParameter = function getUrlParameter(sParam) {
                "dom": '<"wrapper"fitlp>'
                 });
              </script>
+			 
+ 
 			 
 <p>The product, lot and UPC numbers are on the back of the packaging. If you don't  have the original packaging, use the manufacturing date located on the label on  the lighter handle.</p>
 <h2 id="issue">Issue</h2>
