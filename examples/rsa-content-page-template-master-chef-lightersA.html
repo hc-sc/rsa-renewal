@@ -256,19 +256,19 @@ var getUrlParameter = function getUrlParameter(sParam) {
 	The  following model is affected by this recall:
 	</caption>
 	<thead>
-		<tr class="bg-primary">
-			<th>Product number</th>
-			<th>Lot number</th>
-			<th>Manufacturing date</th>
-			<th>UPC</th>
+		<tr>
+			<th scope="col">Product number</th>
+			<th scope="col">Lot number</th>
+			<th scope="col">Manufacturing date</th>
+			<th scope="col">UPC</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>076-2044</td>
-			<td>AD6523/G35J</td>
-			<td>2016-02-01</td>
-			<td>645990215739</td>
+			<td data-label="Product number">076-2044</td>
+			<td data-label="Lot number">AD6523/G35J</td>
+			<td data-label="Manufacturing date">2016-02-01</td>
+			<td data-label="UPC">645990215739</td>
 		</tr>
 	</tbody>
 </table>
@@ -279,6 +279,8 @@ var getUrlParameter = function getUrlParameter(sParam) {
                "dom": '<"wrapper"fitlp>'
                 });
              </script>
+			 
+ 
 			 
 <p>The product, lot and UPC numbers are on the back of the packaging. If you don't  have the original packaging, use the manufacturing date located on the label on  the lighter handle.</p>
 <h2 id="issue">Issue</h2>
