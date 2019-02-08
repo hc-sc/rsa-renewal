@@ -17,6 +17,9 @@ The design in Mobile 1st because the vast majority of people visiting recalls, p
 Various recall and safety alert examples (new design by product)
 * https://hc-sc.github.io/rsa-renewal/examples/hc-template_links
 
+RSA Content Style Guide - DRAFT
+* https://docs.google.com/document/d/1U1suYRqyl2WeZYXlxW9G8MDxitS4a_T62ZG625aOxds/edit?usp=sharing
+
 ## Usability prototypes (June 2018) 
 
 New search site: 
