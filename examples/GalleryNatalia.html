@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Images Carousel</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<!--CSS styling-->
+<style>
+html, body {
+	background-color: black;
+}
+<style>
+.wrapper {
+	width: 100%;
+	padding-top: 40px;
+	text-align: center;
+}
+.carousel {
+	width: 50%;
+	margin: 0px auto;
+}
+.slick-slide {
+	margin: 40px;
+}
+.slick-slide img {
+	width: 100%;
+	border: 2px solid #fff;
+}
+</style>
+</head><body>
+<div class="wrapper">
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false"> 
+    
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active"> <img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" width="400px" > </div>
+      <div class="carousel-item"> <img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" width="400px" > </div>
+      <div class="carousel-item"> <img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" width="400px" > </div>
+	  
+      <!-- <div class="carousel-item active"> <img src="http://lorempixel.com/200/200/nature/" width="400px" > </div>
+      <div class="carousel-item"> <img src="http://lorempixel.com/200/200/fashion/" width="400px" > </div>
+      <div class="carousel-item"> <img src="http://lorempixel.com/200/200/sports/" width="400px" > </div> -->
+    </div>
+    
+    <!-- Left and right controls --> 
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">  <span class="carousel-control-prev-icon"></span> </a> 
+    <a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> </div>
+</div>
+
+<!--JavaScript--> 
+<script> 
+// Activate Carousel
+$("#myCarousel").carousel();
+
+<!-- Enable Carousel Indicators
+$(".item").click(function(){
+  $("#myCarousel").carousel(1);
+});
+
+<!-- Enable Carousel Controls
+$(".left").click(function(){
+  $("#myCarousel").carousel("prev");
+});
+</script>
+</body>
+</html>
