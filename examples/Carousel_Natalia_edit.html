@@ -1,7 +1,6 @@
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
-<!--<![endif]-->
-<head>
+<!--<![endif]--><head>
 <!--"https://gc-proto.github.io/ei/ei-critically-ill-children/eligibility.html" -->
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -35,9 +34,45 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <style>
 @media (min-width:768px) {
 	.owl-container {
- width:50%;
+ width:35%;
 	}
 }
+.owl-prev {
+   
+ 
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  left: -6%;
+  cursor: pointer;
+  color: solid-black;
+  margin-top: -27px;
+  font-size:30px !important;
+  
+  
+}
+
+.owl-next {
+  
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  right: -6%;
+  cursor: pointer;
+  color: solid-black;
+  margin-top: -27px;
+  font-size:30px !important;
+}
+
+.counter {
+  text-align: center;
+}
+
+
 </style>
 <main role="main" property="mainContentOfPage" class="container"> 
 
@@ -53,6 +88,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
  //stagePadding: 50,
 
  nav:true,
+ 
+ 
    onInitialized  : counter, //When the plugin has initialized.
   onTranslated : counter //When the translation of the stage has finished.
  });
@@ -65,17 +102,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
   if(item > items) {
     item = item - items
   }
-  $('#counter').html("item "+item+" of "+items)
+  $('#counter').html(item+ "/" +items)
 }
 	});
+	
 	</script>
+    <h1>MASTER Chef BBQ lighters: fire and burn hazard</h1>
     <div class="owl-carousel" style-"max-width: 200px;">
       <div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" /></div>
       <div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image004.jpg" /></div>
       <div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image006.jpg" /></div>
     </div>
-  </div>
-<div id="counter"></div> 
+    
+ 
+<div id="counter" class="counter"></div> 
+ </div>
   <!-- ========= Content End ========== --> 
   
 </main>
