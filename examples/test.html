@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/theme.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="css/test-tables-alain.css" />
+</head>
+<body>
+
+<!--Start Table pagnation -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 80%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+<script>
+function myFunction() {
+	//Define variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  //End Define Variables
+  // loop through rows 
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0]; //Use First Col
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+var rows = 0;
+function viewmore() {
+	//Define variables
+  var input, filter, table, tr, td, i, txtValue;
+
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  //Build an array of visible rows here
+  
+  //End build array
+  rows = rows + 5; //increase the Value of how many rows to view
+  for (i = 0; i < tr.length; i++) {
+	if (i <= rows) {
+		tr[i].style.display = "";
+	  } else {
+		tr[i].style.display = "none";
+    }       
+  }	
+}
+function viewnext() {
+
+	//Define variables
+  var input, filter, table, tr, td, i, txtValue;
+
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  nextrows = rows + 5; //end range of the next 5 rows
+  for (i = 1; i < tr.length; i++) {
+	if (i > rows && i <= nextrows) {
+		tr[i].style.display = "";
+	  } else {
+		tr[i].style.display = "none";
+    }   	
+  }	
+	rows = rows + 5; //increase the Value of how many rows to view 
+}
+function viewall() {
+
+	//Define variables
+  var input, filter, table, tr, td, i, txtValue;
+
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  
+  for (i = 1; i < tr.length; i++) {
+		tr[i].style.display = "";
+  }	
+	rows = rows + 5; //increase the Value of how many rows to view 
+}
+
+</script>
+<div style="width:80; text-align:center">
+<h2>My Customers</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:10%;">Row Number</th>
+    <th style="width:50%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr>
+	<td>1</td>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+	<td>2</td>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+	<td>3</td>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+	<td>4</td>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+	<td>5</td>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+	<td>6</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+	<td>7</td>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+	<td>8</td>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+  <tr>
+	<td>9</td>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+	<td>10</td>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+	<td>11</td>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+	<td>12</td>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+	<td>13</td>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+	<td>14</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+	<td>15</td>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+	<td>16</td>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+<p><input type="button" id="v-more"  onClick="viewmore()" value="More" style="text-align:center"> <input type="button" id="v-next"  onClick="viewnext()" value="Next" style="text-align:center"> <input type="button" id="vall"  onClick="viewall()" value="View All" style="text-align:center"></p>
+</div>
+
+<script>
+viewmore();
+</script>
+<!-- End Start Table pagnation -->
+</body>
+</html>
