@@ -1,6 +1,7 @@
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
-<!--<![endif]--><head>
+<!--<![endif]-->
+<head>
 <!--"https://gc-proto.github.io/ei/ei-critically-ill-children/eligibility.html" -->
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -16,9 +17,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <link rel="stylesheet" href="css/theme.min.css">
 <link rel="stylesheet" href="css/custom.css">
 
-
-
-
 <!--<![endif]-->
 <!--[if lt IE 9]>
 <link href="../GCWeb/assets/favicon.ico" rel="shortcut icon" />
@@ -28,19 +26,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <!--[if lte IE 9]>
 <![endif]-->
 
-
 <noscript>
 <link rel="stylesheet" href="../wet-boew/css/noscript.min.css" />
 </noscript>
 <script src="js/jquery.min.js"></script>
 <link rel="stylesheet" href="css/jquery.dataTables.min.css">
-
 <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="css/custom.css" />
 <link rel="stylesheet" href="css/test-tables-alain.css" />
 <link rel="stylesheet" href="css/owl.css">
+
+
 
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
 <script>dataLayer1 = [];</script>
@@ -50,7 +48,7 @@ p, li {
 	max-width: 65em;
 }
 </style>
-<script src="js/jquery.js"></script> <!-- Needed for Carosel  -->
+<script src="js/jquery.js"></script><!-- Needed for Carosel  -->
 
 </head><body vocab="http://schema.org/" typeof="WebPage">
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
@@ -151,20 +149,50 @@ p, li {
 .gc-stp-stp {
  margin-bottom: 0;
 }
-@media (min-width:768px) {
-	.owl-container {
-		width:50%;
-	}
-}
+
 @media (max-width:440px) {
   .recall-share {
       margin-top: 10px;
       float: left!important;
   }
 }
+
+@media (min-width:768px) {
+	.owl-container {
+ width:35%;
+	}
+}
+.owl-prev {
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  left: -6%;
+  cursor: pointer;
+  color: solid-black;
+  margin-top: -27px;
+}
+
+.owl-next {  
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  right: -6%;
+  cursor: pointer;
+  color: solid-black;
+  margin-top: -27px;
+}
+
+.counter {
+  text-align: center;
+}
+
 </style>
-<main role="main" property="mainContentOfPage" class="container">
-<script>
+<main role="main" property="mainContentOfPage" class="container"> 
+	<script>
 document.addEventListener("DOMContentLoaded", function(){
  var id = getUrlParameter('id'); // (gets me URL parameters)
  var lang = getUrlParameter('lang'); // (gets me URL parameters)
@@ -207,167 +235,193 @@ var getUrlParameter = function getUrlParameter(sParam) {
    }
 };
 </script>
-<div class="recall-super-title" style="overflow: hidden;">
-	<div class="recall-category" style="padding: 10px 0px 0px 5px; float:left; margin-top: 5px;"> <a href="https://www.canada.ca/en.html" class="cust-breadcrumb">ᐸ Home</a> </div>
-</div>
-
-<!-- Content goes here -->
-
-<h1>[Product identifier: issue]</h1>
-<p><a href="#">Brand name</a> [Specify the brand used to link to a pre-filtered results page based on that specified term. If applicable.]</p>
-<p>Last updated: [month, day, year]
-	<a href="#">view history</a></p>
-<h2>Summary</h2>
-<ul class="lst-spcd">
-	<li><strong>Product</strong>: [Insert brand and/or product name]</li>
-	<li><strong>Issue</strong>: [Insert brief description of issue. One sentence max]</li>
-	<li><strong>What to do</strong>: [Insert brief guidance of what to do if impacted by recall/alert. One sentence max.]</li>
-	<li><strong>Who this is for</strong>: [Insert target audience when not intended for general public]</li>
-</ul>
-<!-- <p><strong>IMAGES</strong> [Insert picture(s). For more than three images a swipeable list will be used.]</p> -->
-<p><img src="images/default-image520x390.jpg" alt="" /></p>
-
-<h2>Affected products</h2>
-<p>[Insert additional info or instructions to help users match their products to the recalled product identifier. If applicable.]</p>
-<!-- <table class="wb-tables table table-striped table-hover" data-wb-tables='{"ordering":false, "paging": false}'> -->
-<table id="myTable">
-	<thead>
-		<tr>
-			<th scope="col">Table header 1</th>
-			<th scope="col">Table header 2</th>
-			<th scope="col">Table header 3</th>
-			<th scope="col">Table header 4</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-		<tr>
-			<td data-label="Table header 1">Table data</td>
-			<td data-label="Table header 2">Table data</td>
-			<td data-label="Table header 3">Table data</td>
-			<td data-label="Table header 4">Table data</td>
-		</tr>
-	</tbody>
-</table>
-             <script>
+	<div class="recall-super-title" style="overflow: hidden;">
+		<div class="recall-category" style="padding: 10px 0px 0px 5px; float:left; margin-top: 5px;"> <a href="https://www.canada.ca/en.html" class="cust-breadcrumb">ᐸ Home</a> </div>
+	</div>
+	
+	<!-- Content goes here -->
+	
+	<h1>[Product identifier: issue]</h1>
+	<p><a href="#">Brand name</a> [Specify the brand used to link to a pre-filtered results page based on that specified term. If applicable.]</p>
+	<p>Last updated: [month, day, year] <a href="#">view history</a></p>
+	<h2>Summary</h2>
+	<ul class="lst-spcd">
+		<li><strong>Product</strong>: [Insert brand and/or product name]</li>
+		<li><strong>Issue</strong>: [Insert brief description of issue. One sentence max]</li>
+		<li><strong>What to do</strong>: [Insert brief guidance of what to do if impacted by recall/alert. One sentence max.]</li>
+		<li><strong>Who this is for</strong>: [Insert target audience when not intended for general public]</li>
+	</ul>
+	<!-- <p><strong>IMAGES</strong> [Insert picture(s). For more than three images a swipeable list will be used.]</p> -->
+	<!--<p><img src="images/default-image520x390.jpg" alt="" /></p>-->
+	
+	
+	<div class="owl-container"> 
+		<script>
+		$(function() {
+			$('.owl-carousel').owlCarousel({
+				//margin: 20,
+				loop: true,
+				items: 1,
+				//stagePadding: 50,	
+				nav:true,	
+				onInitialized  : counter, //When the plugin has initialized.
+				onTranslated : counter //When the translation of the stage has finished.
+			});
+			function counter(event) {
+				var element   = event.target;         // DOM element, in this example .owl-carousel
+				var items     = event.item.count;     // Number of items
+				var item      = event.item.index + 1;     // Position of the current item
+				
+				// it loop is true then reset counter from 1
+				if(item > items) {
+				item = item - items
+				}
+			$('#counter').html(item+ "/" +items)
+			}
+		});	
+	</script>
+		<h1>MASTER Chef BBQ lighters: fire and burn hazard</h1>
+		<div class="owl-carousel" style-"max-width: 200px;">
+			<div class="item"><img src="images/default-image520x390.jpg" /></div>
+			<div class="item"><img src="images/default-image520x390.jpg" /></div>
+			<div class="item"><img src="images/default-image520x390.jpg" /></div>
+		</div>
+		<div id="counter" class="counter"></div>
+	</div>
+	
+	
+	
+	<h2>Affected products</h2>
+	<p>[Insert additional info or instructions to help users match their products to the recalled product identifier. If applicable.]</p>
+	<!-- <table class="wb-tables table table-striped table-hover" data-wb-tables='{"ordering":false, "paging": false}'> -->
+	<table id="myTable">
+		<thead>
+			<tr>
+				<th scope="col">Table header 1</th>
+				<th scope="col">Table header 2</th>
+				<th scope="col">Table header 3</th>
+				<th scope="col">Table header 4</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+			<tr>
+				<td data-label="Table header 1">Table data</td>
+				<td data-label="Table header 2">Table data</td>
+				<td data-label="Table header 3">Table data</td>
+				<td data-label="Table header 4">Table data</td>
+			</tr>
+		</tbody>
+	</table>
+	<script>
                $.noConflict();
                $('#myTable').dataTable( {
                "dom": '<"wrapper"fitlp>'
                 });
              </script>
-
-<h2>Issue</h2>
-<p>[Insert brief description of overall situation. One or two paragraphs max.]</p>
-<h2>What you should do</h2>
-<p>[Insert more detailed instructions for consumers. Optional if there are no instructions.]</p>
-<h2>Similar recalls or alerts</h2>
-<p>[Insert links to related or similar recalls and/or alerts]</p>
-<h2>Additional information</h2>
-<details>
-	<summary class="text-primary"><h3>Previous alerts</h3></summary>
-	<p>[Insert title and hyperlink to previous recalls or alerts for this issue, if applicable]</p>
-</details>
-<details>
-	<summary class="text-primary">
-		<h3>Background</h3>
-	</summary>
-	<p>[Brief summary of the origins of the recall or alert, links to company statements, etc. Can also include a summary of changes if applicable (linked from view history link above)]</p>
-</details>
-<details>
-	<summary class="text-primary">
-		<h3>Details</h3>
-	</summary>
-	<p><strong>Publish date</strong><br />
-		Month/day/year</p>
-	<p><strong>Type of communication:</strong><br />
-		i.e. Public Advisory</p>
-	<p><strong>Category:</strong><br />
-		i.e. Health</p>
-	<p><strong>Subcategory:</strong><br />
-		i.e. Drugs</p>
-	<p><strong>Company:</strong><br />
-		i.e. Manufacturer, Distributor, Retailer</p>
-	<p><strong>Issue:</strong><br />
-		i.e. Supply</p>
-	<p><strong>Audience:</strong><br />
-		i.e. General Public</p>
-	<p><strong>Identification number:</strong><br />
-		i.e. RA-66482</p>
-</details>
-<details>
-	<summary class="text-primary">
-		<h3>Media and public inquiries</h3>
-	</summary>
-	<p><strong>For the media:</strong><br />
-		[Institution name]<br />
-		[Program name]<br />
-		(xxx) xxx-xxxx</p>
-	<p><strong>For the public:</strong><br />
-		[Institution name]<br />
-		[Program name]<br />
-		(xxx) xxx-xxxx</p>
-</details>
-<h2>Report a health or safety concern</h2>
-<details>
-	<summary class="text-primary">
-		<h3>Report a concern</h3>
-	</summary>
-	<p>[Submission form - embedded report form related to product type]</p>
-</details>
-
+	<h2>Issue</h2>
+	<p>[Insert brief description of overall situation. One or two paragraphs max.]</p>
+	<h2>What you should do</h2>
+	<p>[Insert more detailed instructions for consumers. Optional if there are no instructions.]</p>
+	<h2>Similar recalls or alerts</h2>
+	<p>[Insert links to related or similar recalls and/or alerts]</p>
+	<h2>Additional information</h2>
+	<details>
+		<summary class="text-primary">
+			<h3>Previous alerts</h3>
+		</summary>
+		<p>[Insert title and hyperlink to previous recalls or alerts for this issue, if applicable]</p>
+	</details>
+	<details>
+		<summary class="text-primary">
+			<h3>Background</h3>
+		</summary>
+		<p>[Brief summary of the origins of the recall or alert, links to company statements, etc. Can also include a summary of changes if applicable (linked from view history link above)]</p>
+	</details>
+	<details>
+		<summary class="text-primary">
+			<h3>Details</h3>
+		</summary>
+		<p><strong>Publish date</strong><br />
+			Month/day/year</p>
+		<p><strong>Type of communication:</strong><br />
+			i.e. Public Advisory</p>
+		<p><strong>Category:</strong><br />
+			i.e. Health</p>
+		<p><strong>Subcategory:</strong><br />
+			i.e. Drugs</p>
+		<p><strong>Company:</strong><br />
+			i.e. Manufacturer, Distributor, Retailer</p>
+		<p><strong>Issue:</strong><br />
+			i.e. Supply</p>
+		<p><strong>Audience:</strong><br />
+			i.e. General Public</p>
+		<p><strong>Identification number:</strong><br />
+			i.e. RA-66482</p>
+	</details>
+	<details>
+		<summary class="text-primary">
+			<h3>Media and public inquiries</h3>
+		</summary>
+		<p><strong>For the media:</strong><br />
+			[Institution name]<br />
+			[Program name]<br />
+			(xxx) xxx-xxxx</p>
+		<p><strong>For the public:</strong><br />
+			[Institution name]<br />
+			[Program name]<br />
+			(xxx) xxx-xxxx</p>
+	</details>
+	<h2>Report a health or safety concern</h2>
+	<details>
+		<summary class="text-primary">
+			<h3>Report a concern</h3>
+		</summary>
+		<p>[Submission form - embedded report form related to product type]</p>
+	</details>
+</main>
 <!-- End Content goes here -->
-
- 
-
-
-
-
-
-
-
-
-
 
 <hr style="size: 20px; border-top-width: 5px;" />
 <section style="float: left;"> <a href="" class="btn btn-default">Subscribe for recall alerts</a> </section>
@@ -504,13 +558,13 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		</div>
 	</div>
 </footer>
+
 <!--[if gte IE 9 | !IE ]><!--> 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>--> 
 <script src="../wet-boew/js/wet-boew.min.js"></script> 
 <script src="js/jquery.js"></script> 
 <script src="dist/owl.carousel.min.js"></script> 
-
-<script src="js/owl.js"></script>  <!-- Needed for the carousel  -->
+<script src="js/owl.js"></script> <!-- Needed for the carousel  --> 
 <!--<![endif]--> 
 <!--[if lt IE 9]>
 <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
