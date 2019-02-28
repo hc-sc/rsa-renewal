@@ -79,7 +79,7 @@ p, li {
 			</div>
 		</section>
 		<div class="row">
-			<div class="brand col-xs-8 col-sm-9 col-md-6"> <a href="./en.html">
+			<div class="brand col-xs-8 col-sm-9 col-md-6"> <a href="../en.html">
 				<object type="image/svg+xml" tabindex="-1" data="../GCWeb/assets/wmms-blk.svg">
 				</object>
 				<span class="wb-inv"> Government of Canada</span></a> </div>
@@ -142,11 +142,35 @@ p, li {
 			</section>
 		</div>
 	</div>
-	<nav role="navigation" id="wb-bc" property="breadcrumb">
-		<h2>You are here:</h2>
-		<div style="background-color: #335075; min-height: 10px;"></div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement">
 		<div class="container">
-			<div class="row"> </div>
+			<h2 class="wb-inv">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+			<ul role="menu" aria-orientation="vertical" data-ajax-replace="./ajax/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+				<li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb">
+		<h2>You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Home</a></li>
+			</ol>
 		</div>
 	</nav>
 </header>
@@ -213,9 +237,6 @@ var getUrlParameter = function getUrlParameter(sParam) {
    }
 };
 </script>
-<div class="recall-super-title" style="overflow: hidden;">
-	<div class="recall-category" style="padding: 10px 0px 0px 5px; float:left; margin-top: 5px;"> <a href="https://www.canada.ca/en.html" class="cust-breadcrumb">ᐸ Home</a> </div>
-</div>
 
 <!-- ========= Content Start ========== -->
 
@@ -243,71 +264,18 @@ var getUrlParameter = function getUrlParameter(sParam) {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 	<!-- Carousel Styles -->
-	<style>
-	.carousel-control-prev-icon {
-	 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-	}
-
-	.carousel-control-next-icon {
-	  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' ffill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-	}
-	.wrapper {
-		width: 100%;
-		padding-top: 40px;
-		text-align: center;
-	}
-	.carousel {
-		width: 50%;
-		margin: 0px auto;
-	}
-	.slick-slide {
-		margin: 40px;
-	}
-	.slick-slide img {
-		width: 100%;
-		border: 2px solid #fff;
-	}
-	</style>
-
-	<div class="wrapper">
-	  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false"> 
-		
-		<!-- Indicators -->
-		<ul class="carousel-indicators">
-		  <li data-target="#demo" data-slide-to="0" class="active"></li>
-		  <li data-target="#demo" data-slide-to="1"></li>
-		  <li data-target="#demo" data-slide-to="2"></li>
-		</ul>
-		
-		<!-- The slideshow -->
-		<div class="carousel-inner">
-		  <div class="carousel-item active"> <img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" width="400px" > </div>
-		  <div class="carousel-item"> <img src="images/rsa-content-page-template-master-chef-lighters_clip_image004.jpg" width="400px" > </div>
-		  <div class="carousel-item"> <img src="images/rsa-content-page-template-master-chef-lighters_clip_image006.jpg" width="400px" > </div>
+	<link rel="stylesheet" href="css-custom/carousel.css" />
+	<script src="css-custom/carousel.js"></script>
+	<div class="owl-container blogger">
+		<div class="mhn-slide owl-carousel" style-"max-width: 200px;">
+			<div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" /></div>
+			<div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image004.jpg" /></div>
+			<div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image006.jpg" /></div>
 		</div>
-		
-		<!-- Left and right controls --> 
-		<a class="carousel-control-prev" href="#demo" data-slide="prev">  <span class="carousel-control-prev-icon"></span> </a> 
-		<a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> </div>
-		&nbsp;
+		<div class="flex-container">
+			<div id="counter" class="counter"></div>
+		</div>
 	</div>
-
-	<!--JavaScript--> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-	<script> 
-		// Activate Carousel
-		$("#myCarousel").carousel();
-
-		<!-- Enable Carousel Indicators
-		$(".item").click(function(){
-		  $("#myCarousel").carousel(1);
-		});
-
-		<!-- Enable Carousel Controls
-		$(".left").click(function(){
-		  $("#myCarousel").carousel("prev");
-		});
-	</script>
 <!-- End Carousel -->
 
 <!--

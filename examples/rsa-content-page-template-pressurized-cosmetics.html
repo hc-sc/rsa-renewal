@@ -76,7 +76,7 @@ p, li {
 			</div>
 		</section>
 		<div class="row">
-			<div class="brand col-xs-8 col-sm-9 col-md-6"> <a href="./en.html">
+			<div class="brand col-xs-8 col-sm-9 col-md-6"> <a href="../en.html">
 				<object type="image/svg+xml" tabindex="-1" data="../GCWeb/assets/wmms-blk.svg">
 				</object>
 				<span class="wb-inv"> Government of Canada</span></a> </div>
@@ -139,11 +139,35 @@ p, li {
 			</section>
 		</div>
 	</div>
-	<nav role="navigation" id="wb-bc" property="breadcrumb">
-		<h2>You are here:</h2>
-		<div style="background-color: #335075; min-height: 10px;"></div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement">
 		<div class="container">
-			<div class="row"> </div>
+			<h2 class="wb-inv">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+			<ul role="menu" aria-orientation="vertical" data-ajax-replace="./ajax/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+				<li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb">
+		<h2>You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="http://search-recherche.gc.ca/rGsPreview/s_r?st=s&s5bm3ts21rch=x&num=10&st1rt=0&langs=eng&cdn=rasf&q=*:*&fq_pcat=Health&dspl=scat&fq_cat=Drugs">Drugs</a></li>
+			</ol>
 		</div>
 	</nav>
 </header>
@@ -207,9 +231,6 @@ var getUrlParameter = function getUrlParameter(sParam) {
    }
 };
 </script>
-<div class="recall-super-title" style="overflow: hidden;">
-	<div class="recall-category" style="padding: 10px 0px 0px 5px; float:left; margin-top: 5px;"> <a href="http://search-recherche.gc.ca/rGsPreview/s_r?st=s&s5bm3ts21rch=x&num=10&st1rt=0&langs=eng&cdn=rasf&q=*:*&fq_pcat=Health&dspl=scat&fq_cat=Drugs" class="cust-breadcrumb">ᐸ Drugs</a> </div>
-</div>
 
 <!-- ========= Content Start ========== -->
 

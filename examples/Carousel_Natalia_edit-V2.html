@@ -1,6 +1,7 @@
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
-<!--<![endif]--><head>
+<!--<![endif]-->
+<head>
 <!--"https://gc-proto.github.io/ei/ei-critically-ill-children/eligibility.html" -->
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -20,129 +21,43 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <!--[if lte IE 9]>
 <![endif]-->
 
-
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/owl.carousel.min.css" />
 <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-
-
 <link rel="stylesheet" href="css/owl.css">
-
 <script src="js/jquery.js"></script><!-- Needed for Carosel -->
 
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-
-<style>
-
-@media(min-width:768px){
-  .item{margin:0; transform:scale(1)}
-  .owl-container {
- width:35%;
-	}
-}
-
- .owl-prev,
- .owl-next{
-	top:50%;
-	z-index:2;
-	width:40px;
-	height:40px;
-	padding:8px;
-	margin-top:-20px;
-	position:absolute;
-	border-radius:50%;
-	background-color:#f4f6f9 !important;
-	box-shadow:0 4px 4px rgba(0,0,0,.3),0 0 4px rgba(0,0,0,.8)
-	
-}
-.mhn-slide .owl-prev{left:-18px}
-.mhn-slide .owl-next{right:-18px}
-
-.counter {	
-  text-align: center;  
-  color: white; 
-  
-}
-
-
-.flex-container > div {
-  background-color: #374A5F;
- 
-  text-align: center;
-  line-height: 40px;
-  font-size: 18px;
-}
-    .owl-dots{
-        display: none;
-    }
-</style>
+<link rel="stylesheet" href="css-custom/carousel.css" />
 <main role="main" property="mainContentOfPage" class="container"> 
-
-  <!-- ========= Content Start ========== -->
-  
-  
-    <script>
-	$(function() {
- $('.owl-carousel').owlCarousel({
- //margin: 20,
- loop: true,
- items: 1,
- //stagePadding: 40,
-
- nav:true,
- dragBeforeAnimFinish: false,
- dots: true,
- navText:['<svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>','<svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>'],
-
-
- 
- 
-   onInitialized  : counter, //When the plugin has initialized.
-  onTranslated : counter //When the translation of the stage has finished.
- });
- function counter(event) {
-   var element   = event.target;         // DOM element, in this example .owl-carousel
-    var items     = event.item.count;     // Number of items
-    var item      = event.item.index + 1;     // Position of the current item
-  
-  // it loop is true then reset counter from 1
-  if(item > items) {
-    item = item - items
-  }
-  $('#counter').html("Item " + item+ " of " +items)
-}
-	});
 	
+	<!-- ========= Content Start ========== -->
+	<h1>MASTER Chef BBQ lighters: fire and burn hazard</h1>
+	<link rel="stylesheet" href="css-custom/carousel.css" />
+	<script src="css-custom/carousel.js"></script>
+	<div class="owl-container blogger">
+		<div class="mhn-slide owl-carousel" style-"max-width: 200px;">
+			<div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" /></div>
+			<div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image004.jpg" /></div>
+			<div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image006.jpg" /></div>
+		</div>
+		<div class="flex-container">
+			<div id="counter" class="counter"></div>
+		</div>
+	</div>
 	
-	</script>
-    <div class="owl-container blogger"> 
-    <h1>MASTER Chef BBQ lighters: fire and burn hazard</h1>  
- 
-    <div class="mhn-slide owl-carousel" style-"max-width: 200px;">
-      <div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" /></div>
-      <div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image004.jpg" /></div>
-      <div class="item"><img src="images/rsa-content-page-template-master-chef-lighters_clip_image006.jpg" /></div>
-    </div>
-    
- <div class="flex-container">
-<div id="counter" class="counter"></div> 
- </div>
-</div>
-
-  <!-- ========= Content End ========== --> 
-  
+	<!-- ========= Content End ========== --> 
+	
 </main>
-
-
 <script src="js/owl.carousel.min.js"></script> 
 <script src="js/owl.js"></script> 
 <!-- Needed for the carousel --> 
 <!--<![endif]--> 
 <!--[if lt IE 9]>
 <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
-<![endif]--> 
+<![endif]-->
 
 </body>
 </html>

@@ -11,10 +11,10 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
 <!-- Meta data-->
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/custom.css">
 <link href="../GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="../css/theme.min.css">
-<link rel="stylesheet" href="../css/custom.css">
 
 
 
@@ -35,12 +35,12 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <script scr="../js/jquery.min.js"></script>
 <link rel="stylesheet" href="../css/jquery.dataTables.min.css">
 
-<script type="text/javascript" scr="../js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" scr="../js/bootstrap.min.js"></script>
+<script type="text/javascript" scr="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" scr="js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../dist/assets/owl.carousel.min.css" />
-<link rel="stylesheet" href="../css/custom.css" />
-<link rel="stylesheet" href="../css/owl.css">
-<link rel="stylesheet" href="../css/test-tables-alain.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<link rel="stylesheet" href="css/owl.css">
+<link rel="stylesheet" href="css/test-tables-alain.css" />
 
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
 <script>dataLayer1 = [];</script>
@@ -50,7 +50,7 @@ p, li {
 	max-width: 65em;
 }
 </style>
-<script scr="../js/jquery.js"></script> <!-- Needed for Carosel  -->
+<script scr="js/jquery.js"></script> <!-- Needed for Carosel  -->
 
 </head><body vocab="http://schema.org/" typeof="WebPage">
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
@@ -76,7 +76,7 @@ p, li {
 			</div>
 		</section>
 		<div class="row">
-			<div class="brand col-xs-8 col-sm-9 col-md-6"> <a href="./en.html">
+			<div class="brand col-xs-8 col-sm-9 col-md-6"> <a href="../en.html">
 <object type="image/svg+xml" tabindex="-1" data="../GCWeb/assets/wmms-blk.svg">
 </object>
 				<span class="wb-inv"> Government of Canada</span></a> </div>
@@ -139,9 +139,31 @@ p, li {
 			</section>
 		</div>
 	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement">
+		<div class="container">
+			<h2 class="wb-inv">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+			<ul role="menu" aria-orientation="vertical" data-ajax-replace="../ajax/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+				<li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
 	<nav role="navigation" id="wb-bc" property="breadcrumb">
 		<h2>You are here:</h2>
-		<div style="background-color: #335075; min-height: 10px;"></div>
 		<div class="container">
 			<div class="row"> </div>
 		</div>
@@ -231,24 +253,18 @@ var getUrlParameter = function getUrlParameter(sParam) {
 	<li><strong>Issue:</strong> May pose a fire and/or burn  hazard</li>
 	<li><strong>What to do:</strong> Stop using them and return to a Canadian Tire  store for a refund </li>
 </ul>
-<div class="owl-container"> 
-
-	<script>
-	$(function() {
-	  $('.owl-carousel').owlCarousel({
-		margin: 20,
-		loop: true,
-		items: 1,
-		stagePadding: 50
-	  });
-	});
-	</script>
-	<div class="owl-carousel" style-"max-width: 200px;">
-		<div class="item"><img scr="../images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" /></div>
-		<div class="item"><img scr="../images/rsa-content-page-template-master-chef-lighters_clip_image004.jpg" /></div>
-		<div class="item"><img scr="../images/rsa-content-page-template-master-chef-lighters_clip_image006.jpg" /></div>
+	<link rel="stylesheet" href="css-custom/carousel.css" />
+	<script src="css-custom/carousel.js"></script>
+	<div class="owl-container blogger">
+		<div class="mhn-slide owl-carousel" style-"max-width: 200px;">
+			<div class="item"><img src="../images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg" /></div>
+			<div class="item"><img src="../images/rsa-content-page-template-master-chef-lighters_clip_image004.jpg" /></div>
+			<div class="item"><img src="../images/rsa-content-page-template-master-chef-lighters_clip_image006.jpg" /></div>
+		</div>
+		<div class="flex-container">
+			<div id="counter" class="counter"></div>
+		</div>
 	</div>
-</div>
 <h2 id="affected">Affected products </h2>
 <!--<table class="wb-tables table table-striped table-hover" data-wb-tables="{ &quot;ordering&quot; : false}">-->
 <table id="myTable">
