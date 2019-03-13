@@ -20,20 +20,18 @@
 	box-shadow:0 4px 4px rgba(0,0,0,.3),0 0 4px rgba(0,0,0,.8)
 	
 }
-.mhn-slide .owl-prev{left:-18px}
-.mhn-slide .owl-next{right:-18px}
 
-.counter {	
-  text-align: center !important; 
-  color: white; 
+
+
+.container text-center {
+  text-align: center !important;
   
 }
 
-
-.flex-container > div {
+.flex-container  {
   background-color: #374A5F;
- 
   text-align: center !important;
+ color: white !important;
   line-height: 40px;
   font-size: 18px;
 }
