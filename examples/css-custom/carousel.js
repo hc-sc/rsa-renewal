@@ -3,6 +3,7 @@
  //margin: 20,
  loop: true,
  items: 1,
+ margin: 10,
  //stagePadding: 40,
 
  nav:true,

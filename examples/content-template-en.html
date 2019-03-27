@@ -214,52 +214,52 @@ p, li {
 
 </style>
 <main role="main" property="mainContentOfPage" class="container"> 
-	<script>
-document.addEventListener("DOMContentLoaded", function(){
- var id = getUrlParameter('id'); // (gets me URL parameters)
- var lang = getUrlParameter('lang'); // (gets me URL parameters)
- // get the URL aprameters for ID and Lang then return API JSON
- var jsonfromhc = getRecall(id, lang);
- console.log(id);
- console.log(lang);
- console.log(jsonfromhc);
-});
-function getRecall(id, lang) {
-   var base = 'http://healthycanadians.gc.ca/recall-alert-rappel-avis';
-   var uri = base + '/api/' + id + '/' + lang;
-   $.ajax({
-       url:uri,
-       type:'GET',
-       Accept:"application/json",
-       dataType: 'json',
-       success:function(data){
-           console.log(data.title);
-     console.log(data);
-     //use ids to modify page
-     $("#toptitle").text(data.title);
-     $("#toptitle").text(data.title);
-       },
-       error:function(error){
-       },
-   });
-   return;
-};
-var getUrlParameter = function getUrlParameter(sParam) {
-   var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-       sURLVariables = sPageURL.split('&'),
-       sParameterName,
-       i;
-   for (i = 0; i < sURLVariables.length; i++) {
-       sParameterName = sURLVariables[i].split('=');
-       if (sParameterName[0] === sParam) {
-           return sParameterName[1] === undefined ? true : sParameterName[1];
-       }
-   }
-};
+<script>
+	document.addEventListener("DOMContentLoaded", function(){
+	 var id = getUrlParameter('id'); // (gets me URL parameters)
+	 var lang = getUrlParameter('lang'); // (gets me URL parameters)
+	 // get the URL aprameters for ID and Lang then return API JSON
+	 var jsonfromhc = getRecall(id, lang);
+	 console.log(id);
+	 console.log(lang);
+	 console.log(jsonfromhc);
+	});
+	function getRecall(id, lang) {
+	   var base = 'http://healthycanadians.gc.ca/recall-alert-rappel-avis';
+	   var uri = base + '/api/' + id + '/' + lang;
+	   $.ajax({
+		   url:uri,
+		   type:'GET',
+		   Accept:"application/json",
+		   dataType: 'json',
+		   success:function(data){
+			   console.log(data.title);
+		 console.log(data);
+		 //use ids to modify page
+		 $("#toptitle").text(data.title);
+		 $("#toptitle").text(data.title);
+		   },
+		   error:function(error){
+		   },
+	   });
+	   return;
+	};
+	var getUrlParameter = function getUrlParameter(sParam) {
+	   var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		   sURLVariables = sPageURL.split('&'),
+		   sParameterName,
+		   i;
+	   for (i = 0; i < sURLVariables.length; i++) {
+		   sParameterName = sURLVariables[i].split('=');
+		   if (sParameterName[0] === sParam) {
+			   return sParameterName[1] === undefined ? true : sParameterName[1];
+		   }
+	   }
+	};
 </script>
 	
 	<!-- Content goes here -->
-	
+
 	<h1>[Product identifier: issue]</h1>
 	<p><a href="#">Brand name</a> [Specify the brand used to link to a pre-filtered results page based on that specified term. If applicable.]</p>
 	<p>Last updated: [month, day, year] <a href="#">view history</a></p>
@@ -288,7 +288,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 	<h2>Affected products</h2>
 	<p>[Insert additional info or instructions to help users match their products to the recalled product identifier. If applicable.]</p>
 	<!-- <table class="wb-tables table table-striped table-hover" data-wb-tables='{"ordering":false, "paging": false}'> -->
-	<table id="myTable">
+	<table id="myTable" class="table table-striped">
 		<thead>
 			<tr>
 				<th scope="col">Table header 1</th>
@@ -351,7 +351,8 @@ var getUrlParameter = function getUrlParameter(sParam) {
 	<script>
                $.noConflict();
                $('#myTable').dataTable( {
-               "dom": '<"wrapper"fitlp>'
+               //"dom": '<"wrapper"fitlp>'
+               "dom": '<"wrapper"fltp>'
                 });
              </script>
 	<h2>Issue</h2>
@@ -414,7 +415,8 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		</summary>
 		<p>[Submission form - embedded report form related to product type]</p>
 	</details>
-</main>
+	
+
 <!-- End Content goes here -->
 
 <hr style="size: 20px; border-top-width: 5px;" />
@@ -513,6 +515,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		</dl>
 	</div>
 </div>
+</section>
 </main>
 <footer role="contentinfo" id="wb-info">
 	<nav role="navigation" class="container wb-navcurr">
