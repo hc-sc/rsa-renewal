@@ -357,8 +357,12 @@ p, li {
 	   $.noConflict();
 	   $('#myTable').dataTable( {
 	   //"dom": '<"wrapper"fitlp">'
-	     "dom" : "<'row'<'col-sm-4'f><'col-sm-4'i><'col-sm-4 searchStyle'l>>" + "<'row'<'col-sm-12'tr>>" +"<'row'<'col-sm-12'p>>"
-		
+	     "dom" : "<'row'<'col-sm-4'f><'col-sm-4'i><'col-sm-4 searchStyle'l>>" + "<'row'<'col-sm-12'tr>>" +"<'row'<'col-sm-12'p>>",
+		"fnDrawCallback": function(oSettings) {
+        if (oSettings._iDisplayLength > oSettings.fnRecordsDisplay()) {
+            $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+        }
+    }
 		
 		
 		});
