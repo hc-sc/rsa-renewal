@@ -170,29 +170,18 @@ p, li {
 	</nav>
 </header>
 <style>
+
 .gc-stp-stp {
  margin-bottom: 0;
 }
 
-@media (max-width:440px) {
-  .recall-share {
-      margin-top: 10px;
-      float: left!important;
-  }
-}
-
-@media (min-width:768px) {
-	.owl-container {
- width:35%;
-	}
-}
 .owl-prev {
   height: 54px;
   position: absolute;
   top: 50%;
   width: 27px;
   z-index: 1000;
-  left: -6%;
+  left: -4%;
   cursor: pointer;
   color: solid-black;
   margin-top: -27px;
@@ -202,16 +191,20 @@ p, li {
   height: 54px;
   position: absolute;
   top: 50%;
-  width: 27px;
+  width: 50%;
   z-index: 1000;
-  right: -6%;
+  right: -4%;
   cursor: pointer;
   color: solid-black;
   margin-top: -27px;
 }
 
-
-
+@media only screen and (min-width: 992px) {
+  .box {
+  display: flex;
+  justify-content: center;
+}
+} 
 </style>
 <main role="main" property="mainContentOfPage" class="container"> 
 <script>
@@ -271,11 +264,12 @@ p, li {
 		<li><strong>Who this is for</strong>: [Insert target audience when not intended for general public]</li>
 	</ul>
 
- 	<link rel="stylesheet" href="css-custom/carousel.css" />
+	<link rel="stylesheet" href="css-custom/carousel.css" />
 	<script src="css-custom/carousel.js"></script>
-	<div class="owl-container blogger">
-		<div class="mhn-slide owl-carousel" style-"max-width: 200px;">
-			<div class="item"><img src="images/default-image520x390.jpg" /></div>
+    <div class="box">
+	<div id="box" class="owl-container"> 
+		<div class="flex-container owl-carousel">
+        	<div class="item"><img src="images/default-image520x390.jpg" /></div>
 			<div class="item"><img src="images/default-image520x390.jpg" /></div>
 			<div class="item"><img src="images/default-image520x390.jpg" /></div>
 		</div>
@@ -283,9 +277,11 @@ p, li {
 			<div id="counter" class="container text-center"></div>
 		</div>        
 	</div>
-
+    </div>
+    </div>
+	</div>
 <style>
-.tableWidth {//test script
+.tableWidth {
 	/*To remove with 100% on table*/
 	width:auto !important;
 }
