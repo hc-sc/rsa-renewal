@@ -29,10 +29,19 @@ table td {
   text-align: center;
 }
 
+.load-more-table td {
+  text-align: left;
+}
+.load-more-table td:first-child {
+  text-align: center;
+}
+
 table th {
   font-size: .85em;
   letter-spacing: .1em;
 }
+
+
 
 @media screen and (max-width: 600px) {
   table {
@@ -66,6 +75,11 @@ table th {
     font-size: .8em;
     text-align: right;
   }
+
+  .load-more-table td {
+    text-align: center;
+  }
+
 
   table td::before {
     /*

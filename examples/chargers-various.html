@@ -12,9 +12,9 @@
 <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
 <!--[if gte IE 9 | !IE ]><!-->
 <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="https://test.canada.ca/rsa-renewal-2/GCWeb/css/theme.css">
-<link rel="stylesheet" href="css/custom.css">
-<link rel="stylesheet" href="https://test.canada.ca/rsa-renewal-2/GCWeb/css/dataTables.css">
+<link rel="stylesheet" href="./css/theme.css">
+<link rel="stylesheet" href="./css/custom.css">
+<link rel="stylesheet" href="./css/dataTables.css">
 <!-- <link rel="stylesheet" href="../GCWeb/css/test-tables-alain.css" /> -->
 
 <!--<![endif]-->
@@ -108,8 +108,8 @@
 <p>Check your product description or other identifiers (model #, UPC, SKU, etc.) to see if it's affected by this recall. If your product does not have an identifying number, check the picture to see if it matches.</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-<script src="https://test.canada.ca/rsa-renewal-2/GCWeb/js/dataTables.js"></script>
-<script src="https://test.canada.ca/rsa-renewal-2/GCWeb/js/pageLoadMore.js"></script>
+<script src="./js/dataTables.js"></script>
+<script src="./js/pageLoadMore.js"></script>
 
 <style>
 .dt-more-container {
@@ -181,7 +181,7 @@ table img {
       searching: false,
       dom: 't<"bottom"i>',
       ordering: false,
-      ajax: 'http://test.canada.ca/rsa-renewal-2/GCWeb/js/load-more-recalls.json',
+      ajax: 'https://hc-sc.github.io/rsa-renewal/examples/js/load-more-recalls.json',
       drawCallback: function(){
          // If there is some more data
          if($('#btn-load-more-recalls').is(':visible')){
