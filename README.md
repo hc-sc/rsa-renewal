@@ -12,6 +12,17 @@ An initial baseline round of task-scenario testing on the live version of RSAMS 
 
 The design in Mobile 1st because the vast majority of people visiting recalls, particularly food recalls (89% mobile in June 2018) are viewing the web pages on their mobile phone. The search and filtering design is specificially designed to support using filters and search from a phone, while still keeping search results close by on the page. 
 
+## Gate 2 Documentation (June 2019)
+Business Case
+* https://drive.google.com/file/d/1jKmYIq4tBLkxRLpIGfGfkdvyV7to_D17/view?usp=sharing
+
+Project Charter
+* https://drive.google.com/file/d/1moWKMqx2Za8asz94EEHQxykZgQxMI9bA/view?usp=sharing
+
+Technical Options Analysis
+* https://drive.google.com/file/d/1VD2gvAi3Zk4YgUwYXKWYGZaY4faIag46/view?usp=sharing
+
+
 ## Templates (December 2018)
 
 Various recall and safety alert examples (new design by product)
